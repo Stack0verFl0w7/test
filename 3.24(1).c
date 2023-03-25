@@ -14,7 +14,7 @@ int main()
 	char ch[10] = { 0 };
 	printf("%d\n", sizeof(arr));//40
 	printf("%d\n", sizeof(ch));//10
-	test1(arr);//8-ָ���С
+	test1(arr);//8-指针大小
 	test2(ch);//8
 	return 0;
 }
