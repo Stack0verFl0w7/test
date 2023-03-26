@@ -7,7 +7,7 @@ struct Stu
 };
 int main()
 {
-	struct Stu S1 = { "ÕÅÈı",20,"123456" };
+	struct Stu S1 = { "å¼ ä¸‰",20,"123456" };
 	printf("%s\n", S1.name);
 	printf("%d\n", S1.age);
 	printf("%s\n", S1.id);
