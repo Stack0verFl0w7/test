@@ -1,4 +1,5 @@
 #include <stdio.h>
+//ç»“æ„ä½“ä¼ å‚æœ€å¥½ä¼ åœ°å€
 typedef struct Stu
 {
 	char name[20];
@@ -25,9 +26,9 @@ void print2(Stu* tmp)
 
 int main()
 {
-	Stu s = { "ÕÅÈı",20,"11122233344","ÄĞ" };
+	Stu s = { "å¼ ä¸‰",20,"11122233344","ç”·" };
 	print1(s);
 	print2(&s);
-	//´òÓ¡½á¹¹ÌåÊı¾İ£¬print2¸üºÃ
+	//æ‰“å°ç»“æ„ä½“æ•°æ®ï¼Œprint2æ›´å¥½
 	return 0;
 }
