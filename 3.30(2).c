@@ -1,4 +1,5 @@
 #include <stdio.h>
+//结构体内放结构体
 struct S
 {
 	int a;
