@@ -1,5 +1,7 @@
 #include <stdio.h>
 //写一段代码得出当前机器的字节序是什么
+//return 1-小端
+//return 0-大端
 int check_sys()
 {
 	int a = 1;
