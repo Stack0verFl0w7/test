@@ -2,7 +2,7 @@
 int check_sys()
 {
 	int a = 1;
-	char* p = (char*)&a;
+	char* p = (char*)&a;//return *(char*)&a;
 	return *p;
 }
 
@@ -11,11 +11,11 @@ int main()
 	int ret = check_sys();
 	if (ret = 1)
 	{
-		printf("Ğ¡¶Ë\n");
+		printf("ÃÂ¡Â¶Ã‹\n");
 	}
 	else
 	{
-		printf("´ó¶Ë\n");
+		printf("Â´Ã³Â¶Ã‹\n");
 	}
 	return 0;
 }
