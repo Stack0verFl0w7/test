@@ -1,4 +1,5 @@
 #include <stdio.h>
+//有符号，无符号，整型提升
 int main()
 {
 	char a = -1;
