@@ -1,4 +1,5 @@
 #include <stdio.h>
+//高位补0还是1看的是a自身的类型，而非打印的类型
 int main()
 {
 	char a = -128;
