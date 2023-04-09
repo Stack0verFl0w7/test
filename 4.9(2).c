@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	char* p = "abcdef";//"abcdef"是一个常量字符串
+	char* p = "abcdef";//"abcdef"鏄竴涓父閲忓瓧绗︿覆
 	//printf("%c\n",*p);
 	printf("%s\n", p);
 	return 0;
