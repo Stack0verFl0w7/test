@@ -2,8 +2,8 @@
 int main()
 {
 	char* p = "abcdef";//const char* p = "abcdef";
-	*p = 'w';//¶Î´íÎó
+	*p = 'w';//æ®µé”™è¯¯-Sagmentation fault
 	printf("%s\n", p);
 	return 0;
-	//Ò»°ãchar* pÇ°Òª¼Óconst,±£»¤ºóÃæµÄ³£Á¿×Ö·û´®
+	//ä¸€èˆ¬char* på‰è¦åŠ const,ä¿æŠ¤åé¢çš„å¸¸é‡å­—ç¬¦ä¸²
 }
