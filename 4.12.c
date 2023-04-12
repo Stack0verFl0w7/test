@@ -1,3 +1,4 @@
+//结构体内存对齐
 #include <stdio.h>
 struct S1
 {
