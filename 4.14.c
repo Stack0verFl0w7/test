@@ -10,6 +10,6 @@ struct S
 int main()
 {
 	struct S s;
-	printf("%d\n", sizeof(s));
+	printf("%d\n", sizeof(s));//12
 	return 0;
 }
