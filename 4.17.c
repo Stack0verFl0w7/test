@@ -17,8 +17,8 @@ int main()
 {
 	struct S s = { 0 };
 	Init(&s);
-	printf("%d\n", s.i);
-	printf("%c\n", s.c);
-	printf("%f\n", s.d);
+	printf("%d\n", s.i);//100
+	printf("%c\n", s.c);//w
+	printf("%f\n", s.d);//3.140000
 	return 0;
 }
