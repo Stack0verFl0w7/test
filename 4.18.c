@@ -18,7 +18,7 @@ void Print1(struct S tmp)
 	printf("%d %c %lf ", tmp.i, tmp.c, tmp.d);
 }
 
-void Print2(struct S* ps)
+void Print2(struct S* ps)                        //void Print2(const struct S* ps)-加个const更保险
 {
 	printf("%d %c %lf ", ps->i, ps->c, ps->d);
 }
