@@ -8,8 +8,15 @@
 #include <stdio.h>
 
 int main() {
-	char a;
-	scanf("%c", &a);
-	printf("%c%c%c\n%c%c%c\n%c%c%c\n", a, a, a, a, a, a, a, a, a);
-	return 0;
+   char a;
+   int i;
+   int b;
+   scanf("%c",&a);
+   for(i=0;i<3;i++){
+    for(b=0;b<3;b++){
+        printf("%c",a);
+    }
+    printf("\n");
+   }
+   return 0;
 }
