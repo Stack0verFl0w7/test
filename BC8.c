@@ -10,28 +10,26 @@
 
 int main() {
 	char a;
-	int i1; //上3行
-	int i2; //下2行
-	int j;  //列
+	int i; //行
+	int j; //列
 	scanf("%c", &a);
-	for (i1 = 0; i1 < 3; i1++) {
+	for (i = 0; i < 5; i++) {
 		for (j = 0; j < 5; j++) {
-			if (abs(j - 3 + 1) <= i1) {
-				printf("%c", a);
+			if (i < 3) {
+				if (abs(j - 3 + 1) <= i) {
+					printf("%c", a);
+				}
+				else {
+					printf(" ");
+				}
 			}
 			else {
-				printf(" ");
-			}
-		}
-		printf("\n");
-	}
-	for (i2 = 3; i2 < 5; i2++) {
-		for (j = 0; j < 5; j++) {
-			if (abs(j - 3 + 1) <= (5 - (i2 + 1))) {
-				printf("%c", a);
-			}
-			else {
-				printf(" ");
+				if (abs(j - 3 + 1) <= (5 - (i + 1))) {
+					printf("%c", a);
+				}
+				else {
+					printf(" ");
+				}
 			}
 		}
 		printf("\n");
