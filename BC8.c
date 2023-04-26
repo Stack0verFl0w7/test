@@ -9,11 +9,19 @@
 
 int main() {
 	char a;
+	int i;
+	int j;
 	scanf("%c", &a);
-	printf("  %c  \n", a);
-	printf(" %c%c%c \n", a, a, a);
-	printf("%c%c%c%c%c\n", a, a, a, a, a);
-	printf(" %c%c%c \n", a, a, a);
-	printf("  %c  \n", a);
+	for (i = 1; i <= 5; i++) {
+		for (j = 1; j <= 5; j++) {
+			if (i == 3 || j == 3 || (i == 2 && ((j == 4) || (j == 2))) || (i == 4 && ((j == 2) || (j == 4)))) {
+				printf("%c", a);
+			}
+			else {
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
 	return 0;
 }
