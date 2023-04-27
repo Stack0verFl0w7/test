@@ -13,3 +13,4 @@ int main() {
     printf("%hhd",c);
     return 0;
 }
+//转换规则中长度指示符对应的类型等级%hhd = char、%hd = short、%d = int、%ld = long、%lld = long long。
