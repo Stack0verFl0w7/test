@@ -1,15 +1,38 @@
-//ÃèÊö
-//³¢ÊÔÓÃ¼üÅÌ¶ÁÈëÒ»¸ö×Ö·û£¬È»ºóÔÚÆÁÄ»ÉÏÏÔÊ¾Ò»¸öÓÃÕâ¸ö×Ö·ûÌî³äµÄ¶Ô½ÇÏß³¤5¸ö×Ö·û£¬ÇãÐ±·ÅÖÃµÄÁâÐÎ¡£
-//ÊäÈëÃèÊö£º
-//ÊäÈëÒ»¸öcharÀàÐÍ×Ö·û
-//Êä³öÃèÊö£º
-//Êä³öÒ»¸öÓÃÕâ¸ö×Ö·ûÌî³äµÄ¶Ô½ÇÏß³¤5¸ö×Ö·û£¬ÇãÐ±·ÅÖÃµÄÁâÐÎ
+//æè¿°
+//å°è¯•ç”¨é”®ç›˜è¯»å…¥ä¸€ä¸ªå­—ç¬¦ï¼Œç„¶åŽåœ¨å±å¹•ä¸Šæ˜¾ç¤ºä¸€ä¸ªç”¨è¿™ä¸ªå­—ç¬¦å¡«å……çš„å¯¹è§’çº¿é•¿5ä¸ªå­—ç¬¦ï¼Œå€¾æ–œæ”¾ç½®çš„è±å½¢ã€‚
+//è¾“å…¥æè¿°ï¼š
+//è¾“å…¥ä¸€ä¸ªcharç±»åž‹å­—ç¬¦
+//è¾“å‡ºæè¿°ï¼š
+//è¾“å‡ºä¸€ä¸ªç”¨è¿™ä¸ªå­—ç¬¦å¡«å……çš„å¯¹è§’çº¿é•¿5ä¸ªå­—ç¬¦ï¼Œå€¾æ–œæ”¾ç½®çš„è±å½¢
 
 #include <stdio.h>
+#include<math.h>
 
 int main() {
-    char a;
-    scanf("%c", &a);
-    printf("  %c  \n %c%c%c \n%c%c%c%c%c\n %c%c%c \n  %c  \n", a, a, a, a, a, a, a, a, a, a, a, a, a);
-    return 0;
+	char a;
+	int i; //è¡Œ
+	int j; //åˆ—
+	scanf("%c", &a);
+	for (i = 0; i < 5; i++) {
+		for (j = 0; j < 5; j++) {
+			if (i < 3) {
+				if (abs(j - 3 + 1) <= i) {
+					printf("%c", a);
+				}
+				else {
+					printf(" ");
+				}
+			}
+			else {
+				if (abs(j - 3 + 1) <= (5 - (i + 1))) {
+					printf("%c", a);
+				}
+				else {
+					printf(" ");
+				}
+			}
+		}
+		printf("\n");
+	}
+	return 0;
 }
