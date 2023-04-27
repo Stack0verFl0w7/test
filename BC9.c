@@ -6,10 +6,10 @@
 //输出输入字符对应的ASCII码。
 
 #include <stdio.h>
-
+ 
 int main() {
-    char a;
-    scanf("%c", &a);
-    printf("%d", a);
+    char c = 0;
+    scanf("%c",&c);
+    printf("%hhd",c);
     return 0;
 }
