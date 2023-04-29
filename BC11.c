@@ -9,16 +9,10 @@
 
 #include <stdio.h>
 
-int main() {
-    int a;
-    int b;
-    int c;
-    scanf("%d %d %d", &a, &b, &c);
-    if (a <= 100 && a >= 0 && b <= 100 && b >= 0 && c <= 100 && c >= 0) {
-        printf("score1=%d,score2=%d,score3=%d", a, b, c);
-    }
-    else {
-        printf("ÊäÈë´íÎó\n");
-    }
+int main() 
+{
+    int score[3]={0};
+    scanf("%d %d %d",&score[0],&score[1],&score[2]);
+    printf("score1=%d,score2=%d,score3=%d\n",score[0],score[1],score[2]);
     return 0;
 }
