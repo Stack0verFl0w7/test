@@ -14,7 +14,7 @@ int main() {
     float c;
     float m;
     float e;
-    scanf("%d;%f,%f,%f", &i, &c, &m, &e);
+    scanf("%d;%f,%f,%f", &i, &c, &m, &e);//-输入用%f，输出用%.2f
     if (i >= 1 && i <= 20000000) {
         printf("The each subject score of No. %d is %.2f, %.2f, %.2f.", i, c, m, e);
     }
