@@ -48,3 +48,20 @@ int main() {
 	}
 	return 0;
 }
+
+//第三版，找原因
+#include <stdio.h>
+
+int main() {
+	int b[8] = { 0 };
+	int i;
+	for (i = 0; i < 8; i++) {
+		b[i]=(int)getchar();
+	}
+	printf("year=%d%d%d%d\nmonth=%d%d\ndate=%d%d\n",b[0],b[1],b[2],b[3],b[4], b[5],b[6],b[7]);
+	return 0;
+}
+//20130225
+//year = 50484951
+//month = 4850
+//date = 5053
