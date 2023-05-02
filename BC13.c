@@ -49,7 +49,7 @@ int main() {
 	return 0;
 }
 
-//第三版，找原因
+//第三版，找原因？
 #include <stdio.h>
 
 int main() {
@@ -74,3 +74,4 @@ int main()
     scanf("%4d%2d%2d",&a,&b,&c);
      printf("year=%d\nmonth=%02d\ndate=%02d\n",a,b,c);
 }
+//通过scanf函数的%m格式控制可以指定输入域宽，输入数据域宽（列数），按此宽度截取所需数据；通过printf函数的%0格式控制符，输出数值时指定左面不使用的空位置自动填0。
