@@ -29,7 +29,7 @@ int main() {
     a = a - b;
     printf("a=%d,b=%d", a, b);
     return 0;
-}
+}//这种方法有缺陷，a+b的值可能会溢出
 
 //第三版
 #include <stdio.h>
@@ -37,9 +37,9 @@ int main() {
 int main() {
     int a, b;
     scanf("a=%d,b=%d", &a, &b);
-    a = a - b;
-    b = a + b;
     a = b - a;
+    b = b - a;
+    a = a + b;
     printf("a=%d,b=%d", a, b);
     return 0;
 }
