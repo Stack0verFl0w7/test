@@ -47,14 +47,12 @@ int main() {
 //第四版
 #include <stdio.h>
 
-int main()
-{
-	int a = 3;// 011
-	int b = 5;// 101
-	a = a ^ b;// 110
-	b = a ^ b;// 011
-	a = a ^ b;// 101
-	printf("%d\n", a);
-	printf("%d\n", b);
-	return 0;
+int main() {
+    int a, b;
+    scanf("a=%d,b=%d", &a, &b);
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+    printf("a=%d,b=%d", a, b);
+    return 0;
 }//这种方法不方便阅读，一般不使用，但要了解
