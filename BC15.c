@@ -5,6 +5,7 @@
 //输出描述：
 //针对每组输入输出对应的小写字母。
 
+//第一版
 #include<stdio.h>
 int main()
 {
@@ -18,4 +19,17 @@ int main()
 		printf("\n");
 	}
 	return 0;
+}
+
+//第二版
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    char ch = 0;
+    while(scanf("%c", &ch) != EOF) {
+        getchar();
+        //调用内置的tolower函数进行转换
+        printf("%c\n", tolower(ch));
+    }
 }
