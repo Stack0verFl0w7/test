@@ -6,17 +6,17 @@ typedef struct {
 
 bool backetCheck(char str[], int length) {
 	SqStack S;
-	InitStack(S);
+	InitStack(S);   //初始化一个栈  
 	for (int i = 0; i < length; i++) {
 		if (str[i] == '(' || str[i] == '[' || str[i] == '{') {
-			Push(S, str[i]);
+			Push(S, str[i]);     //扫描到左括号，入栈
 		}
 		else {
-			if (StackEmpty(S))
-				return false;
+			if (StackEmpty(S))   //扫描到左括号，且当前栈空
+				return false;//匹配失败
 
 			char topElem;
-			Pop(S, topElem);
+			Pop(S, topElem);     //栈顶元素出栈
 			if (str[i] == ')' && topElem != '(')
 				return false;
 			if (str[i] == ']' && topElem != '[')
@@ -24,6 +24,6 @@ bool backetCheck(char str[], int length) {
 			if (str[i] == '}' && topElem != '{')
 				return false;
 		}
-		return StackEmpty(S);
+		return StackEmpty(S);        //检索完全部括号后，栈空说明匹配成功
 	}
 }
