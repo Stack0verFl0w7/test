@@ -27,3 +27,13 @@ bool backetCheck(char str[], int length) {
 		return StackEmpty(S);        //检索完全部括号后，栈空说明匹配成功
 	}
 }
+
+
+//初始化栈
+void InitStack(SqStack &S)
+//判断栈是否为空
+bool StackEmpty(SqStack S)
+//新元素入栈
+bool Push(SqStack &S,char x)
+//栈顶元素出栈，用x返回
+bool Pop(SqStack &S,char &x)
