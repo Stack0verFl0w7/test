@@ -9,6 +9,19 @@
 //备注：
 //printf可以使用使用格式控制串“%o”、“%X”分别输出八进制整数和十六进制整数，并使用修饰符“#”控制前导显示
 
+
+//第一版
+#include <stdio.h>
+
+int main() {
+    int i=1234;
+    printf("0%o ",i);
+    printf("0X%X ",i);
+    return 0;
+}
+
+
+//第二版
 #include <stdio.h>
 
 int main() {
