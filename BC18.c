@@ -12,6 +12,6 @@ int main() {
     int i;
     float f;
     scanf("%c\n%d\n%f\n", &ch, &i, &f);
-    printf("%c %d %f", ch, i, f);
+    printf("%c %d %.6f, ch, i, f);
     return 0;
 }
