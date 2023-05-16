@@ -5,11 +5,23 @@
 //输出描述：
 //输出一个整数
 
+//第一版
 #include <stdio.h>
 
 int main() {
     int a, b;
     scanf("%d %d", &a, &b);
     printf("%d", a % b);
+    return 0;
+}
+
+//第二版
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    c=a % b;
+    scanf("%d %d", &a, &b);
+    printf("%d", c);
     return 0;
 }
