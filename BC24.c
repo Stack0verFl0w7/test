@@ -7,11 +7,24 @@
 //输出描述：
 //一行，包含一个整数，为输入浮点数对应的个位数。
 
+//第一版
 #include <stdio.h>
 
 int main() {
     float i;
     scanf("%f", &i);
     printf("%d", (int)i % 10);
+    return 0;
+}
+
+//第二版
+#include <stdio.h>
+
+int main() {
+    float a;
+    int b;
+    scanf("%f", &a);
+    b=(int)a % 10;
+    printf("%d", b);
     return 0;
 }
