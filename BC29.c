@@ -8,6 +8,7 @@
 //输出描述：
 //输出一个数字，表示开学日期是星期几。
 
+//第一版
 #include <stdio.h>
 
 int main() {
@@ -21,4 +22,15 @@ int main() {
         printf("%d", 7);
     }
     return 0;
+}
+
+//第二版
+#include <stdio.h>
+
+int main()
+{
+	int  Week, Day;
+	scanf("%d%d", &Week, &Day);
+	printf("%d\n",(Week + Day - 1) % 7 + 1); //避免出现周日余数为0，兼顾简洁易懂
+	return 0;
 }
