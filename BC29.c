@@ -1,3 +1,14 @@
+//描述
+//小S：终于可以开学啦！好开心啊！
+//小Y：你没看新闻吗，开学日期又延后了。
+//小S：NOOOOOOOOOOOOOOOO！
+//小S知道原计划星期X开学，通知开学时间延期N天，请问开学日期是星期几（星期日用7表示）？
+//输入描述：
+//输入包含两个数字X，N（1≤X≤7, 1≤N≤1000）。
+//输出描述：
+//输出一个数字，表示开学日期是星期几。
+
+//第一版
 #include <stdio.h>
 
 int main() {
@@ -11,4 +22,15 @@ int main() {
         printf("%d", 7);
     }
     return 0;
+}
+
+//第二版
+#include <stdio.h>
+
+int main()
+{
+	int  Week, Day;
+	scanf("%d%d", &Week, &Day);
+	printf("%d\n",(Week + Day - 1) % 7 + 1); //避免出现周日余数为0，兼顾简洁易懂
+	return 0;
 }
