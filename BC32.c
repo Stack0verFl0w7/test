@@ -7,6 +7,7 @@
 //输出描述：
 //一行，包含一个整数，输出年龄对应的秒数。
 
+//第一版
 #include <stdio.h>
 
 int main() {
@@ -14,5 +15,16 @@ int main() {
     scanf("%d", &age);
     s = age * 3156;
     printf("%d0000", s);
+    return 0;
+}
+
+//第二版
+#include<stdio.h>
+
+int main(){
+    long age,second;
+    scanf("%ld",&age);
+    second = age * 31560000 ; 
+    printf("%ld",second);
     return 0;
 }
