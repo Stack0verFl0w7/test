@@ -15,5 +15,7 @@ int main() {
     scanf("%f %f %f", &a, &b, &c);
     p = (a + b + c) / 2;
     printf("circumference=%.2f area=%.2f", 2 * p, sqrt(p * (p - a) * (p - b) * (p - c)));
+    //海伦公式
+    //sqrt求算术平方根
     return 0;
 }
