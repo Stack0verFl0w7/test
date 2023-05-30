@@ -5,6 +5,7 @@
 //输出描述：
 //针对每组输入，输出也仅一行，剩下的未打开的酸奶盒数。
 
+//第一版
 #include <stdio.h>
 
 int main() {
@@ -16,5 +17,16 @@ int main() {
     else {
         printf("%d", n - m / h);
     }
+    return 0;
+}
+
+//第二版
+#include<stdio.h>
+
+int main()
+{
+    float n,h,m;
+    scanf("%f%f%f",&n,&h,&m);
+    printf("%d",(int)(n-(m/h)));
     return 0;
 }
