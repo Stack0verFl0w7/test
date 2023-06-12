@@ -9,11 +9,23 @@
 //输出描述：
 //针对每组输入，输出按照KiKi的运算规则计算出 a+b 的值。
 
+//第一版
 #include <stdio.h>
 
 int main() {
     int a, b;
     scanf("%d %d", &a, &b);
     printf("%d", (a % 100 + b % 100) % 100);
+    return 0;
+}
+
+
+//第二版
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d", (a + b) % 100);
     return 0;
 }
