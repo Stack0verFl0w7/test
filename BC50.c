@@ -5,12 +5,27 @@
 //输出描述：
 //针对每行输入，输出“Genius”。
 
+//第一版，不全面
 #include <stdio.h>
 
 int main() {
     int n;
     scanf("%d", &n);
     if (n >= 140) {
+        printf("Genius\n");
+    }
+    return 0;
+}
+
+//第二版
+#include<stdio.h>
+
+int main()
+{
+    int a=0;
+    while(scanf("%d",&a)!=EOF);//注意多行输入
+    if(a>=140)
+    {
         printf("Genius\n");
     }
     return 0;
