@@ -5,6 +5,7 @@
 //输出描述：
 //输出该字符是字母（YES）或不是（NO）。
 
+//第一版
 #include <stdio.h>
 
 int main() {
@@ -17,4 +18,21 @@ int main() {
         printf("NO\n");
     }
     return 0;
+}
+
+//第二版
+#include<stdio.h>
+#include<math.h>
+int main(){
+	char a;
+	while((a=getchar())!=EOF){
+		getchar();
+		if(a>='A'&&a<='z'){
+			printf("YES\n");
+		}
+		else {
+			printf("NO\n");
+		}
+	}    
+	return 0;
 }
