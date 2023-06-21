@@ -72,3 +72,28 @@ int main() {
     return 0;
 }
 
+//第三版
+
+int main()
+{
+    int a;
+    scanf("%d", &a);
+    a = a % 100;
+    if (a >= 3 && a <= 5 )
+    {
+        printf("spring");
+    }
+    else if (a >= 6 && a <= 8)
+    {
+        printf("summer");
+    }
+    else if (a >= 9 && a <= 11)
+    {
+        printf("autumn");
+    }
+    else
+    {
+        printf("winter");
+    }
+    return 0;
+}
