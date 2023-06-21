@@ -5,6 +5,40 @@
 //输出描述：
 //输出月份对应的季节（用英文单词表示，全部用小写字母）。
 
+//第一版，错误
+#include <stdio.h>
+
+int main() {
+    int arr[6]={0};
+    for(int i=0;i<6;i++){
+        scanf("%d",&arr[i]);
+    }
+    if(arr[4]==0){
+        if(arr[5]<=2){
+            printf("winter\n");
+        }
+        if(arr[5]>=3&&arr[6]<=5){
+            printf("spring\n");
+        }
+        if(arr[5]>=6&&arr[6]<=8){
+            printf("summer\n");  
+        }
+        if(arr[5]==9){
+            printf("autumn\n");  
+        }
+    }
+    if(arr[4]!=0){
+        if(arr[5]==2){
+            printf("winter\n");
+        }
+        else{
+            printf("autumn\n");
+        }
+    }
+    return 0;
+}
+
+//第二版
 #include<stdio.h>
 int main() {
     int year, month;
@@ -37,3 +71,4 @@ int main() {
     }
     return 0;
 }
+
