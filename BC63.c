@@ -7,6 +7,7 @@
 //输出描述：
 //一行，小明实际花的钱数（保留两位小数）。（提示：不要指望商家倒找你钱）
 
+//第一版
 #include <stdio.h>
 
 int main() {
@@ -39,5 +40,36 @@ int main() {
             printf("%.2f", 0.8 * val);
         }
     }
+    return 0;
+}
+
+//第二版
+#include<stdio.h>
+
+int main()
+{
+    double price = 0.0;
+    int month = 0;
+    int day = 0;
+    int flag = 0;
+
+    scanf("%lf %d %d %d", &price, &month, &day, &flag);
+    if (month == 11 && day == 11)
+    {
+            price = price * 0.7 - 50.0*flag;
+    }
+    else if (month == 12 && day == 12)
+    {
+            price = price * 0.8 - 50*flag;
+    }
+    if (price < 0)
+    {
+        printf("0.00\n");
+    }
+    else
+    {
+        printf("%.2lf\n", price);
+    }
+
     return 0;
 }
