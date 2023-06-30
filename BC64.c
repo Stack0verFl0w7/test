@@ -80,3 +80,27 @@ int main() {
     }
     return 0;
 }
+
+//第三版，向上取整函数ceil
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float a;
+    char b;
+    int money=20;
+    scanf("%f %c", &a, &b);
+      if(a>0&&a<=1){
+        if(b=='y')
+            printf("25");
+        else
+            printf("20");
+    }
+    if(a>1){
+      money=money+ceil(a-1);    //向上取整函数
+      if(b=='y')
+          printf("%d",money+5);
+      else
+          printf("%d",money);
+    }
+    return 0;
+}
