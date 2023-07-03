@@ -41,3 +41,20 @@ int main()
         x1>x?printf("r"):printf("l");
     return 0;
 }
+
+//第三版
+#include <stdio.h>
+int main()
+{
+int x,y,x1,y1;
+scanf("%d %d\n%d %d",&x,&y,&x1,&y1);
+if(x1-x==1)
+    printf("r");
+if(x1-x==-1)
+    printf("l");
+if(y1-y==1)
+    printf("u");
+if(y1-y==-1)
+    printf("d");
+return 0;
+}
