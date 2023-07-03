@@ -12,6 +12,7 @@
 //(x,y) =(0,0) (x1,y1) = (1,0) ，则牛牛向右伸手，输出 'r'。
 //(x,y) =(0,0) (x1,y1) = (-1,0) ，则牛牛向左伸手，输出 'l'。
 
+//第一版
 #include <stdio.h>
 int main()
 {
@@ -25,5 +26,18 @@ int main()
         printf("r");
     else if (x1 < x && y1 - y1 == 0)
         printf("l");
+    return 0;
+}
+
+//第二版
+int main()
+{
+    int x,y,x1,y1;
+    scanf("%d %d",&x,&y);
+    scanf("%d %d",&x1,&y1);
+    if (x1==x)
+        y1>y?printf("u"):printf("d");
+    else
+        x1>x?printf("r"):printf("l");
     return 0;
 }
