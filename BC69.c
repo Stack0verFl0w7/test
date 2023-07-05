@@ -41,7 +41,7 @@ int main(){
             printf("Bad Gateway\n");
             break;
         default:
-            printf("errorŁĄ");
+            printf("error!");
         }
     }
 }
