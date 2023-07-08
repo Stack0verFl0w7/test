@@ -62,3 +62,17 @@ int main()
     printf("%lld", min + max);
     return 0;
 }
+
+//方法二，递归
+int gys(int n,int m){
+  if(m==0)
+    return n;
+  return gys(m,n%m);
+}
+int main(){
+  int n = 0,m = 0;
+  scanf("%d %d",&n,&m);
+  int gbs = n*m;
+  int ret = gys(n,m);//公约数
+  gbs = gbs / gys;//公倍数
+}
