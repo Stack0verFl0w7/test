@@ -5,6 +5,7 @@
 //输出描述：
 //输出 n行"Happy new year!Good luck!"。
 
+//第一版
 #include<stdio.h>
 
 int main() {
@@ -12,6 +13,20 @@ int main() {
     scanf("%d", &n);
     for (i = 0; i < n; i++) {
         printf("Happy new year!Good luck!\n");
+    }
+    return 0;
+}
+
+//第二版
+#include<stdio.h>
+
+int main(){
+    int n=0;
+    int i=0;
+    scanf("%d",&n);
+    while(i<n){
+        printf("Happy new year!Good luck!\n");
+        i++;
     }
     return 0;
 }
