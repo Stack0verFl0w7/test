@@ -6,6 +6,7 @@
 //输出描述：
 //请你判断牛牛是否开始学习。如果是则输出 yes ，否则输出 no
 
+//第一版
 #include <stdio.h>
 
 int main()
@@ -26,4 +27,51 @@ int main()
         printf("yes");
     }
     return 0;
+}
+
+//第二版
+#include <stdio.h>
+
+int main()
+{
+	int arr[2][3] = { 0 };
+	//定义一个二维数组并初始化
+	
+	for (int a = 0; a < 2; a++)
+	{
+		for (int b = 0; b < 3; b++)
+		{
+			scanf("%d", &arr[a][b]);
+		}
+	}
+	//把输入的值赋给数组内的变量
+
+	if (arr[1][0] > arr[0][0])
+	{
+		printf("yes\n");
+	}
+	else if (arr[1][0] == arr[0][0])
+	{
+			if (arr[1][1] > arr[0][1])
+			{
+				printf("yes\n");
+			}
+			else if (arr[1][1] == arr[0][1])
+			{
+				if (arr[1][2] >= arr[0][2])
+				{
+					printf("yes\n");
+				}
+			}
+			else if (arr[1][1] < arr[0][1])
+			{
+				printf("no\n");
+			}
+		
+	}
+	else if(arr[1][0] < arr[0][0])
+	{
+		printf("no\n");
+	}
+	return 0;
 }
