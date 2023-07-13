@@ -5,6 +5,7 @@
 //输出描述：
 //输出一个值，为求和结果。
 
+//第一版
 #include <stdio.h>
 
 int main() {
@@ -16,5 +17,20 @@ int main() {
         i--;
     }
     printf("%ld", n);
+    return 0;
+}
+
+//第二版
+#include <stdio.h>
+
+int main() {
+    long long n=0;
+    int i=0;
+    int j=1;
+    scanf("%d",&i);
+    for(j=1;j<=i;j++){
+        n+=j;
+    }
+    printf("%lld",n);
     return 0;
 }
