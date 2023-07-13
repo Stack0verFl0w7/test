@@ -16,7 +16,7 @@ int main() {
         n = n + i;
         i--;
     }
-    printf("%ld", n);
+    printf("%lld", n);
     return 0;
 }
 
@@ -32,5 +32,19 @@ int main() {
         n+=j;
     }
     printf("%lld",n);
+    return 0;
+}
+
+//第三版
+#include <stdio.h>
+
+int main()
+{
+    //等差数列求和公式
+    long long n = 0;
+    scanf("%lld", &n);
+    long long sum = 0;
+    sum = (1 + n) * n / 2;
+    printf("%lld\n", sum);
     return 0;
 }
