@@ -14,6 +14,7 @@
 1*8= 8 2*8=16 3*8=24 4*8=32 5*8=40 6*8=48 7*8=56 8*8=64
 1*9= 9 2*9=18 3*9=27 4*9=36 5*9=45 6*9=54 7*9=63 8*9=72 9*9=81*/
 
+//第一版
 #include <stdio.h>
 
 int main() {
@@ -26,6 +27,20 @@ int main() {
             else {
                 printf("%d*%d=%d ", j, i, i * j);
             }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//第二版
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    for (i = 1; i <= 9; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%d*%d=%2d ", j, i, i * j);
         }
         printf("\n");
     }
