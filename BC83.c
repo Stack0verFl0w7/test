@@ -52,3 +52,23 @@ int main(){
 	printf("%d\n", b);
 	return 0;
 }
+
+//第三版
+#include<stdio.h>
+int main()
+{
+    int n=0,i=0,j=0;;
+    scanf("%d",&n);
+    i=n/2;
+    j=n%2;
+    if(j==0)
+    //j=0代表为偶数，则全部抵消；
+    {
+        printf("%d",-i);
+    }
+    else
+    //j=1代表为奇数，加上n；
+    {
+        printf("%d",n-i);
+    }
+}
