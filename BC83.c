@@ -6,6 +6,7 @@
 //输出描述：
 //输出一个整数
 
+//第一版
 #include <stdio.h>
 
 int main() {
@@ -32,4 +33,22 @@ int main() {
     }
     printf("%d", sum);
     return 0;
+}
+
+//第二版
+
+int main(){
+	int a = 0, b = 0;
+	scanf("%d", &a);
+	int c = a;
+
+	for (; c > 0; c--){
+		a = c;
+		if (a % 2 == 0){
+			a *= -1;
+		}
+		b += a;
+	}
+	printf("%d\n", b);
+	return 0;
 }
