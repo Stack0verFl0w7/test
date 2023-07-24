@@ -7,6 +7,7 @@
 //输出描述：
 //输出一个整数
 
+//方案一
 #include <stdio.h>
 
 int main() {
@@ -24,6 +25,23 @@ int main() {
             count += 1;
         }
         printf("%d", count);
+    }
+    return 0;
+}
+
+//方案二
+#include <stdio.h>
+
+int main() {
+    int n;
+    int count=0;
+    scanf("%d",&n);
+    if(n>0&&n<100){
+        while(n!=1){
+            n = n % 2 == 0 ? n / 2 : 3 * n + 1;
+            count+=1;
+        }
+    printf("%d",count);
     }
     return 0;
 }
